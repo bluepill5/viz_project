@@ -4,7 +4,12 @@
   "description": "Viz Project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "callback": "node script.js",
+    "callback:challenge": "node challenge.js",
+    "promise": "node promise.js",
+    "promise:challenge": "node challengePromise.js",
+    "async": "node async.js",
+    "async:challenge": "node challengeAsync.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/bluepill5/viz_project/issues"
   },
-  "homepage": "https://github.com/bluepill5/viz_project#readme"
+  "homepage": "https://github.com/bluepill5/viz_project#readme",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
 }
