@@ -1,0 +1,348 @@
+* {
+  padding: 0%;
+}
+
+body {
+  background-color: #1e2125;
+  font-family: "PT Sans", sans-serif;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.h1Black {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.h1BlackTitle {
+  /* background-color: #deecff; */
+  background-color: rgba(120, 196, 250, 0.2);
+  margin: 0em;
+  padding: 1em;
+
+  color: #000000;
+  font-weight: bold; /* font weight*/
+  font-family: "Montserrat", sans-serif;
+  text-decoration: underline overline; /* for text decoration */
+  text-align: center; /* for text align	*/
+  text-decoration: underline overline; /* for text decoration */
+  letter-spacing: 1em; /* for letter spacing */
+  word-spacing: 1em; /* for word spacing */
+  text-align: center; /* for text align	*/
+}
+
+.main {
+  background-color: #f5f7f6;
+  background-image: url("https://image.freepik.com/free-vector/abstract-connecting-dots-lines-with-geometric-background_41981-1508.jpg");
+  background-repeat: repeat;
+  padding: 2em;
+}
+
+.main ul {
+  list-style-position: inside;
+  list-style: square;
+}
+
+section {
+  line-height: 1.6; /* line height for different elements */
+}
+
+p {
+  font-family: "PT Sans", sans-serif;
+}
+
+.title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold; /* font weight*/
+}
+
+.navbar {
+  position: fixed;
+  margin: 0;
+  top: 0;
+  left: 0;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  background-color: #1e2125;
+  font-size: 1.5em;
+}
+
+.navbar li {
+  display: block;
+  position: relative;
+  float: left;
+  background: #1e2125; /* menu background color */
+}
+.navbar li a {
+  display: block;
+  padding: 0;
+  text-decoration: none;
+  width: 200px; /* this is the width of the menu items */
+  line-height: 35px; /* this is the height of the menu items */
+  color: #ffffff; /* list item font color */
+}
+.navbar li li a {
+  font-size: 80%; /* smaller font size for sub menu items */
+}
+
+.navbar li:hover {
+  background: #6a6c70; /* highlights current hovered list item and the parent list items when hovering over sub menues */
+}
+
+.navbar ul {
+  position: absolute;
+  padding: 0;
+  left: 0;
+  display: none; /* hides sublists */
+}
+
+.navbar li:hover ul ul {
+  display: none; /* hides sub-sublists */
+}
+
+.navbar li:hover ul {
+  display: block; /* shows sublist on hover */
+}
+
+.navbar li li:hover ul {
+  display: block; /* shows sub-sublist on hover */
+  margin-left: 200px; /* this should be the same width as the parent list item */
+  margin-top: -35px; /* aligns top of sub menu with top of list item */
+}
+
+.plots {
+  z-index: 9999;
+  padding: 1em 0;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1em;
+	margin: 2em;
+}
+
+.item {
+	align-self: flex-end;
+	/* background-color: #f24e4e; */
+	background-color: rgba(120, 196, 250, 0.2);
+	margin: 1em;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	font-family: "PT Sans", sans-serif;
+  /* Transformation */
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.item:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.flex-container-contact {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+	margin: 2em;
+	background-color: rgba(120, 196, 250, 0.2);
+}
+
+.item-contact {
+	align-self: flex-end;
+	/* background-color: #f24e4e; */
+	background-color: rgba(120, 196, 250, 0.2);
+	margin: 1em;
+	padding: 1em;
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+	font-family: "PT Sans", sans-serif;
+}
+
+.item img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 300px 500px 300px;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+  padding: 20px;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.box-header {
+  background-color: rgb(65, 166, 212);
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.box-language {
+  background-color: rgb(255, 255, 255);
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.r-code {
+  display: block;
+  white-space: pre-wrap;
+  background-color: #000000;
+  color:rgb(255, 255, 255);
+}
+
+.python-code {
+  display: block;
+  white-space: pre-wrap;
+  background-color: #000000;
+  color:rgb(255, 255, 255);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  opacity: 0.5;
+  object-fit: cover;
+}
+
+.card-img-top-saturate {
+  width: 100%;
+  height: 15vw;
+  opacity: 0.5;
+  object-fit: cover;
+  filter: saturate(3);
+}
+
+.card-img-top-grayscale {
+  width: 100%;
+  height: 15vw;
+  opacity: 0.5;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.card-img-top-sepia {
+  width: 100%;
+  height: 15vw;
+  opacity: 0.5;
+  object-fit: cover;
+  filter: sepia(100%);
+}
+
+.card-img-top-hue {
+  width: 100%;
+  height: 15vw;
+  opacity: 0.5;
+  object-fit: cover;
+  filter: hue-rotate(180deg);
+}
+
+.text-js {
+  color: #97c93e !important;
+}
+
+.btn-js {
+  background-color: #97c93e;
+  color: white;
+
+}
+
+.btn-js:hover {
+  background-color: #82ad36;
+  color: white;
+  
+}
+
+#main .carousel-inner img {
+  max-height: 70vh;
+  object-fit: cover;
+  filter: grayscale(70%);
+}
+
+#carousel {
+  position: relative;
+}
+
+#carousel .overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+#carousel .overlay .container, 
+#carousel .overlay .row {
+  height: 100%;
+}
+
+#place-time {
+  background-color: #343a40;
+  color: white;
+}
+
+#place-time img {
+  max-width: 100%;
+}
+
+.classFooter {
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  line-height: 0%;
+  text-align: center;
+  position: fixed;
+  background-color: #1e2125;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 1em;
+}
+
+.classFooter p {
+  font-family: "PT Sans", sans-serif;
+}
+
+.classFooter p a{
+  color: white;
+}
+

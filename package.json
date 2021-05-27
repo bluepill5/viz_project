@@ -1,27 +1,21 @@
 {
-  "name": "viz_project",
+  "name": "proyecto",
   "version": "1.0.0",
-  "description": "Viz Project",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "callback": "node script.js",
-    "callback:challenge": "node challenge.js",
-    "promise": "node promise.js",
-    "promise:challenge": "node challengePromise.js",
-    "async": "node async.js",
-    "async:challenge": "node challengeAsync.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bluepill5/viz_project.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss assets/scss/prueba.scss assets/css/pruebacss.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bluepill5/viz_project/issues"
-  },
-  "homepage": "https://github.com/bluepill5/viz_project#readme",
   "dependencies": {
-    "xmlhttprequest": "^1.8.0"
+    "bootstrap": "^5.0.0",
+    "sass": "^1.34.0"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.0",
+    "nodemon": "^2.0.7"
   }
 }
